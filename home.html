@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +9,152 @@
     <link rel="stylesheet" href="Css/home.css">
     <!--Tailwind Link-->
     <script src="https://cdn.tailwindcss.com"></script>
+
+
 </head>
+
 <body>
-    
+
+    <nav class="bg-white ">
+        <div class="max-w-[95rem] lg:px-6 ">
+            <div class="flex justify-between lg:">
+
+                <div class="">
+                    <!-- Website Logo -->
+                    <a href="#" class="flex items-center py-4 px-2">
+                        <img src="images/MiraLogo.svg" alt="Logo" class=" w-[100%]">
+                    </a>
+                </div>
+                <!-- Primary Navbar items -->
+                <div class="hidden md:flex items-center space-x-1 gap-10 testFont ">
+                    <a href="" class="py-4 px-2 text-[#2D4985] text-[20px]">Meet Mira</a>
+                    <a href=""
+                        class="py-4 px-2 text-[#2D4985] text-[20px] hover:border-b-[2px]-[#2D4985]  transition duration-300">How
+                        Mira
+                        Works </a>
+                    <a href=""
+                        class="py-4 px-2 text-[#2D4985] text-[20px] hover:border-b-[2px]-[#2D4985] transition duration-300">Ask
+                        Mira</a>
+                    <a href=""
+                        class="py-4 px-2 text-[#2D4985] text-[20px] hover:border-b-[2px]-[#2D4985] transition duration-300">Unlock
+                        Mira</a>
+                </div>
+
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button onclick="openNav()" class="outline-none mobile-menu-button px-4 ">
+                        <svg class=" w-8 h-8 text-[] hover:font-semibold  " x-show="!showMenu" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- mobile menu -->
+        <div class="hidden mobile-menu">
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="#">Meet Mira</a>
+                    <a href="#">How Mira works</a>
+                    <a href="#">Ask Mira</a>
+                    <a href="#">Unlock Mira</a>
+                </div>
+            </div>
+
+        </div>
+        <script>
+
+            const btn = document.querySelector("button.mobile-menu-button");
+            const menu = document.querySelector(".mobile-menu");
+
+            btn.addEventListener("click", () => {
+                menu.classList.toggle("hidden");
+            });
+
+            function openNav() {
+                document.getElementById("myNav").style.width = "100%";
+            }
+
+            function closeNav() {
+                document.getElementById("myNav").style.width = "0%";
+            }
+
+        </script>
+    </nav>
+
+
+    <!-- footer  -->
+
+    <div class="bg-[#E3E3E3] md:grid grid-cols-5 testFont1 md:h-[20rem] px-6 py-10 md:px-0 md:py-0">
+        <div class="col-span-2 flex flex-col gap-9 md:ml-[3rem] md:mt-[4.5rem]">
+            <div class="flex flex-col gap-2">
+                <p class="font-bold text-3xl">Mira Lab's LLC</p>
+                <a href="" class=""><img src="images/MiraFooterLogo.webp" alt="" class="h-[4rem] w-[9rem] "></a>
+            </div>
+            <div class="">
+                <p class=""> © 2023 by Mira Labs, LLC.</p>
+            </div>
+        </div>
+        <div class="col-span-1  mt-[3rem] md:mt-[4.5rem] tracking-wide">
+            <div class="">
+                <h1 class="font-bold text-2xl">Menu</h1>
+            </div>
+            <div class="flex flex-col gap-2 mt-4">
+                <a href="" class="">
+                    <p class="text-lg">Meet Mira</p>
+                </a>
+                <a href="" class="">
+                    <p class="text-lg">How Mira Works</p>
+                </a>
+                <a href="" class="">
+                    <p class="text-lg">Ask Mira</p>
+                </a>
+                <a href="" class="">
+                    <p class="text-lg">Unlock Mira</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-span-1 mt-[3rem]  md:mt-[4.5rem] tracking-wide">
+            <div class="">
+                <h1 class="font-bold text-2xl">Policy</h1>
+            </div>
+            <div class="flex flex-col gap-2 mt-4">
+                <a href="" class="">
+                    <p class="text-lg">Privacy Policy</p>
+                </a>
+                <a href="" class="">
+                    <p class="text-lg">Term & Conditions</p>
+                </a>
+                <a href="" class="">
+                    <p class="text-lg">Cookie Policy</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-span-1  mt-[3rem] md:mt-[4.5rem] tracking-wide">
+            <div class="">
+                <h1 class="font-bold text-2xl">Social</h1>
+            </div>
+            <div class="flex flex-col gap-2 mt-4">
+                <a href="" class=""><p class="text-lg">Facebook</p></a>
+                <a href="" class=""><p class="text-lg">Instagram</p></a>
+                <a href="" class=""><p class="text-lg">X</p></a>   
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!-- footer  -->
+
+
+
 </body>
+
 </html>
