@@ -9,9 +9,16 @@
 .testFont1{
   font-family: 'K2D', sans-serif;
 }
+body{
+  background-color:white;
+}
 
+.main{
+  max-width: 1500px;
+  margin: auto;
+  padding: 10px;
+}
 /* navbar styling */
-
  .navbar {
 
     overflow: hidden;
