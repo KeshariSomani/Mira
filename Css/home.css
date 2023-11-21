@@ -165,3 +165,23 @@ body{
 .accordion__body.is-active {
   display: block;
 }
+
+/*meet mira */
+.card1:hover span {
+  display: none
+}
+.card1:hover:before {
+  content: "The mission behind MIRA is clear to revolutionize mortgage lending through technological prowess. It serves as a catalyst to eradicate inefficiencies and augment value for lenders, borrowers, and intermediaries alike."
+}  
+.card2:hover span {
+  display: none
+}
+.card2:hover:before {
+  content: "MIRA aspires to be a groundbreaking force in the mortgage industry. It aims to automate the cumbersome, often slow tasks that have long held back this sector, introducing unprecedented speed and efficiency into the mortgage ecosystem.."
+}    
+.card3:hover span {
+  display: none
+}
+.card3:hover:before {
+  content: " Ultimately, the driving purpose of MIRA is a profound belief in technology's power to positively transform lives by simplifying and democratizing the mortgage process for all stakeholders."
+} 
