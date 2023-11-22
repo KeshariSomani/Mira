@@ -122,10 +122,11 @@ body{
 }
 
 .accordion__toggle {
+  content: "+";
+  color: #2D4985;
   margin-left: 10px;
-  height: 3px;
-  background-color: #222;
-  width: 13px;
+  font-size: 22px;
+  font-weight: bolder;
   display: block;
   position: relative;
   flex-shrink: 1;
@@ -133,11 +134,11 @@ body{
 }
 
 .accordion__toggle::before {
-  content: "";
+  content: "+";
   width: 3px;
   height: 13px;
   display: block;
-  background-color: #222;
+  /* background-color: #222; */
   position: absolute;
   top: -5px;
   left: 5px;
@@ -149,7 +150,7 @@ body{
 }
 
 .is-active .accordion__toggle {
-  background-color: black;
+  background-color: #2D4985;
 }
 .is-active .accordion__toggle::before {
   display: none;
@@ -184,4 +185,59 @@ body{
 }
 .card3:hover:before {
   content: " Ultimately, the driving purpose of MIRA is a profound belief in technology's power to positively transform lives by simplifying and democratizing the mortgage process for all stakeholders."
+} 
+
+/* How Mira works */
+.sec3_card1:hover span {
+  display: none
+  
+}
+.sec3_card1:hover::after {
+  content: "MIRA provides immediate, accurate answers to all your mortgage queries, streamlining customer interactions."
+  
+}
+
+.sec3_card2:hover span {
+  display: none  
+}
+.sec3_card2:hover::after {
+  content: "Sophisticated algorithms enable MIRA to quickly gauge loan eligibility with instant, AI-driven assessments streamlining your initial mortgage steps."
+} 
+
+.sec3_card3:hover span {
+  display: none  
+}
+.sec3_card3:hover::after {
+  content: "MIRA efficiently extracts & processes data from borrower-uploaded documents, significantly reducing manual work & accelerating application completion."
+} 
+
+.sec3_card4:hover span {
+  display: none  
+}
+.sec3_card4:hover::after {
+  content: "Streamline pre-approvals and eligibility checks with MIRA's quick, accurate processing. Enjoy significant time and cost savings, enhancing your operational efficiency."
+} 
+.sec3_card5:hover span {
+  display: none  
+}
+.sec3_card5:hover::after {
+  content: "Struggling with your qualification. Discuss your scenario with Mira and get tailored and customized solution to make your loan workable on individual borrower scenar."
+} 
+.sec3_card6:hover span {
+  display: none  
+}
+.sec3_card6:hover::after {
+  content: "MIRA's AI-powered platform guarantees continuous support throughout the mortgage journey. Whether it's late-night queries, early morning updates, or real-time assistance during business hours.ency."
+} 
+.sec3_card7:hover span {
+  display: none  
+}
+.sec3_card7:hover::after {
+  content: "MIRA streamlines mortgage processing, cutting down on time-intensive tasks and reducing operational expenses. Experience a smarter way to save, both in resources and costs, with MIRA's AI-driven solutions."
+} 
+.sec3_card8:hover span {
+  display: none  
+}
+.sec3_card8:hover::after {
+  content: "Let MIRA work tirelessly in the background, ensuring you never miss an opportunity to connect with potential borrowers, even outside business hours."
 } 
