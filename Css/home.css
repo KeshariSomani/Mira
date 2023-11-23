@@ -9,6 +9,10 @@
 .testFont1{
   font-family: 'K2D', sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+  
+}
 body{
   background-color:white;
 }
@@ -188,6 +192,8 @@ body{
 } 
 
 /* How Mira works */
+
+
 .sec3_card1:hover span {
   display: none
   
@@ -199,9 +205,11 @@ body{
 
 .sec3_card2:hover span {
   display: none  
+
 }
 .sec3_card2:hover::after {
   content: "Sophisticated algorithms enable MIRA to quickly gauge loan eligibility with instant, AI-driven assessments streamlining your initial mortgage steps."
+ 
 } 
 
 .sec3_card3:hover span {
